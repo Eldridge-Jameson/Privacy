@@ -1,10 +1,18 @@
-{{ extends 'global/Page.html' }}
-{{ block title }}Final results{{ endblock }}
+{{ extends 'global/Page.html' }} {{ block title }} Final Ranking {{ endblock }} {{ block content }}
+Place 1: Player {{ranking_id.0 }} with {{ranking_points.0 }} points.
 
-{{ block content }}
-<center>
-The final rankings are 
-{{ formfields }}
-{{ next_button }}
-</center>
-{{ endblock }}
+Place 2: Player {{ranking_id.1 }} with {{ranking_points.1 }} points.
+
+{{ if players_per_group > 2 }}
+Place 3: Player {{ranking_id.2 }} with {{ranking_points.2 }} points.
+
+{{ endif }} {{ if players_per_group > 3 }}
+Place 4: Player {{ranking_id.3 }} with {{ranking_points.3 }} points.
+
+{{ endif }} {{ if players_per_group > 4 }}
+Place 5: Player {{ranking_id.4 }} with {{ranking_points.4 }} points.
+
+{{ endif }} {{ if players_per_group > 5 }}
+Place 6: Player {{ranking_id.5 }} with {{ranking_points.5}} points.
+
+{{ endif }} {{ formfields }} {{ next_button }} {{ endblock }}

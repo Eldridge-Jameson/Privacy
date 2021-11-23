@@ -1,18 +1,40 @@
-{{ extends 'global/Page.html' }} {{ block title }} Final Ranking {{ endblock }} {{ block content }}
-Place 1: Player {{ranking_id.0 }} with {{ranking_points.0 }} points.
+{{ extends 'global/Page.html' }}
+{{ block title }} Final Ranking {{ endblock }}
 
-Place 2: Player {{ranking_id.1 }} with {{ranking_points.1 }} points.
+{{ block content }}
+
+<p>Place 1: Player  {{ranking_id.0 }}  with {{ranking_points.0 }} points.
+</p>
+<p>Place 2: Player  {{ranking_id.1 }}   with {{ranking_points.1 }} points.
+</p>
 
 {{ if players_per_group > 2 }}
-Place 3: Player {{ranking_id.2 }} with {{ranking_points.2 }} points.
+<p>Place 3: Player  {{ranking_id.2 }}   with {{ranking_points.2 }} points.
+</p>
 
-{{ endif }} {{ if players_per_group > 3 }}
-Place 4: Player {{ranking_id.3 }} with {{ranking_points.3 }} points.
+{{ endif }}
 
-{{ endif }} {{ if players_per_group > 4 }}
-Place 5: Player {{ranking_id.4 }} with {{ranking_points.4 }} points.
+{{ if players_per_group > 3 }}
+<p>Place 4: Player  {{ranking_id.3 }}   with {{ranking_points.3 }} points.
+</p>
 
-{{ endif }} {{ if players_per_group > 5 }}
-Place 6: Player {{ranking_id.5 }} with {{ranking_points.5}} points.
+{{ endif }}
 
-{{ endif }} {{ formfields }} {{ next_button }} {{ endblock }}
+{{ if players_per_group > 4 }}
+<p>Place 5: Player  {{ranking_id.4 }}   with {{ranking_points.4 }} points.
+</p>
+
+{{ endif }}
+
+{{ if players_per_group > 5 }}
+<p>Place 6: Player  {{ranking_id.5 }}   with {{ranking_points.5}} points.
+</p>
+
+{{ endif }}
+
+
+{{ formfields }}
+
+{{ next_button }}
+</center>
+{{ endblock }}

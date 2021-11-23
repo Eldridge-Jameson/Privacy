@@ -1,12 +1,12 @@
 from os import environ
 SESSION_CONFIG_DEFAULTS = dict(real_world_currency_per_point=1, participation_fee=0)
-SESSION_CONFIGS = [dict(name='my_session', num_demo_participants=3, app_sequence=['Privacy_Initialization', 'Privacy_Game'])]
+SESSION_CONFIGS = [dict(name='my_session', num_demo_participants=2, app_sequence=['Privacy_Initialization', 'Privacy_Game'])]
 LANGUAGE_CODE = 'en'
 REAL_WORLD_CURRENCY_CODE = 'USD'
 USE_POINTS = True
 DEMO_PAGE_INTRO_HTML = ''
-PARTICIPANT_FIELDS = ['is_dropout']
-SESSION_FIELDS = ['quesstion_bank', 'used_questions', 'invalid_Ids']
+PARTICIPANT_FIELDS = ['is_dropout','username']
+SESSION_FIELDS = ['used_questions', 'invalid_Ids','host',]
 ROOMS = []
 
 ADMIN_USERNAME = 'admin'
@@ -17,4 +17,3 @@ SECRET_KEY = 'blahblah'
 
 # if an app is included in SESSION_CONFIGS, you don't need to list it here
 INSTALLED_APPS = ['otree']
-

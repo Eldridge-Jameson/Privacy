@@ -195,7 +195,8 @@ class Wait_page_3(WaitPage):
         for player in group.get_players():
             print("p",player)
             if ind == 0:
-                ranking_id.append(player.id_in_group)
+                #ranking_id.append(player.id_in_group)
+                ranking_id.append(player.participant.username)
                 ranking_points.append(player.participant.vars["overall_points"])
             else:
                 ind2 = 0
@@ -203,11 +204,13 @@ class Wait_page_3(WaitPage):
                     print(ranking_points)
                     print("p",player, "ind2", ind2)
                     if player.participant.vars["overall_points"] > ranking_points[ind2]:
-                        ranking_id.insert(ind2,player.id_in_group)
+                        #ranking_id.insert(ind2,player.id_in_group)
+                        ranking_id.insert(ind2,player.participant.username)
                         ranking_points.insert(ind2, player.participant.vars["overall_points"])
                         break
                     elif ind2+1 >= len(ranking_points):
-                        ranking_id.append(player.id_in_group)
+                        #ranking_id.append(player.id_in_group)
+                        ranking_id.append(player.participant.username)
                         ranking_points.append(player.participant.vars["overall_points"])
                         break
                     ind2 +=1

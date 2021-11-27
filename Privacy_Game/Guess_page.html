@@ -1,10 +1,18 @@
 {{ extends 'global/Page.html' }}
-{{ block title }} {{ endblock }}
+{{ block title }}<img src="https://imgur.com/ajS9Aun.png">{{ endblock }}
+
+{{ block styles }}
+    <style>
+        body{
+            background-image: url('https://imgur.com/U7GujPg.png');
+        }
+    </style>
+{{ endblock }}
 
 {{ block content }}
-<center>
+<center><b>
 How many people do you think said yes?
 {{ formfields }}
 {{ next_button }}
-</center>
+</b></center>
 {{ endblock }}

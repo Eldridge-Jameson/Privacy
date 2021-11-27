@@ -1,10 +1,18 @@
 {{ extends 'global/Page.html' }}
-{{ block title }}ASK QUESTION{{ endblock }}
+{{ block title }}<img src="https://imgur.com/bPgoRdL.png">{{ endblock }}
+
+{{ block styles }}
+    <style>
+        body{
+            background-image: url('https://imgur.com/g0guS4H.png');
+        }
+    </style>
+{{ endblock }}
 
 {{ block content }}
-<center>
+<center><b>
 {{ formfields }}
 
 {{ next_button }}
-</center>
+</b></center>
 {{ endblock }}

@@ -1,10 +1,19 @@
 {{ extends 'global/Page.html' }}
-{{ block title }}HOST{{ endblock }}
+
+{{ block styles }}
+    <style>
+        body{
+            background-image: url('https://imgur.com/xuIfDZj.png');
+        }
+    </style>
+{{ endblock }}
+
+{{ block title }}<img src="https://imgur.com/eh2NwWt.png">{{ endblock }}
 
 {{ block content }}
 
 {{ formfields }}
-Room ID: {{player.host_Id}}
+<b>Room ID: {{player.host_Id}}</b>
 
 <center>
 {{ next_button }}

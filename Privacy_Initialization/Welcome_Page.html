@@ -3,18 +3,20 @@
 {{ block styles }}=
     <style>
       body {
-        background-image: url('https://imgur.com/LikScmu.png');
-        color: #ffe091;
+        background-image: url('https://imgur.com/t2Xptk3.png');
+        background-color: #000000;
+        font-family: courier;
+        background-repeat: repeat-x;
       }
     </style>
 {{ endblock }}
 
-{{ block title }}<center>PRIVACY</center>{{ endblock }}
+{{ block title }}<center><img src="https://imgur.com/t0sjPWY.png"></center>{{ endblock }}
 
 {{ block content }}
 <center>
-<p>Are you a host?</p>
-{{ formfields }}
+<p><b>Are you a host?</b></p>
+    <b>{{ formfields }}</b>
 {{ next_button }}
 </center>
 {{ endblock }}

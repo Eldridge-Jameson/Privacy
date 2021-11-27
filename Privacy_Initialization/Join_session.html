@@ -1,11 +1,19 @@
 {{ extends 'global/Page.html' }}
-{{ block title }}JOIN{{ endblock }}
+{{ block title }}<img src="https://imgur.com/8qH1Wyf.png"{{ endblock }}
+
+{{ block styles }}
+    <style>
+        body{
+            background-image: url('https://imgur.com/Kw20uKX.png');
+        }
+    </style>
+{{ endblock }}
 
 {{ block content }}
 
-<center>
+<center><b>
 {{ formfields }}
 {{ next_button }}
-</center>
+</b></center>
 
 {{ endblock }}

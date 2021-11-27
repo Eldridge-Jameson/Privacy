@@ -1,8 +1,18 @@
 {{ extends 'global/Page.html' }}
-{{ block title }} Final Ranking {{ endblock }}
+
+{{ block styles }}
+    <style>
+        body{
+            background-image: url('https://imgur.com/g0guS4H.png');
+        }
+    </style>
+{{ endblock }}
+
+{{ block title }} <img src="https://imgur.com/NalYsv7.png"> {{ endblock }}
 
 {{ block content }}
 
+<center><b>
 <p>Place 1: {{ranking_id.0 }}  with {{ranking_points.0 }} points.
 </p>
 <p>Place 2: {{ranking_id.1 }}   with {{ranking_points.1 }} points.
@@ -36,5 +46,5 @@
 {{ formfields }}
 
 {{ next_button }}
-</center>
+</b></center>
 {{ endblock }}

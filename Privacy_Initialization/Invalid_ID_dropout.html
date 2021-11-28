@@ -1,9 +1,17 @@
 {{ extends 'global/Page.html' }}
-{{ block title }}Invalid ID {{ endblock }}
+{{ block title }} <img src="https://imgur.com/XHeqUB4.png"> {{ endblock }}
+
+{{ block styles }}
+    <style>
+        body{
+            background-image: url('https://imgur.com/J8aYhBt.png');
+        }
+    </style>
+{{ endblock }}
 
 {{ block content }}
 
 {{ formfields }}
-The wrong ID was entered too many times. Please leave the session and attempt to join again. Thank you 
+<center><b>The wrong ID was entered too many times. Please leave the session and attempt to join again. Thank you.</b></center>
 
 {{ endblock }}

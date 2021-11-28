@@ -1,8 +1,18 @@
 {{ extends 'global/Page.html' }}
-{{ block title }}<center>ID invalid. Please try again.</center>{{ endblock }}
+{{ block title }}
+<img src="https://imgur.com/XHeqUB4.png">{{ endblock }}
+
+{{ block styles }}
+    <style>
+        body{
+            background-image: url('https://imgur.com/6uAKgem.png');
+        }
+    </style>
+{{ endblock }}
 
 {{ block content }}
 <center>
+    Please try again.
 {{ formfields }}
 {{next_button}}
 </center>
